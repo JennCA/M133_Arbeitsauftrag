@@ -1,0 +1,82 @@
+[
+  {
+    "id": "001",
+    "image": "../../assets/products/nektarinen.jpg",
+    "name": "Nektarinen gelb",
+    "offer": 3.60,
+    "price": 5.20,
+    "description": "Herkunft: Spanien"
+  },
+  {
+    "id": "002",
+    "image": "../../assets/products/tomaten.jpg",
+    "name": "Rispentomaten",
+    "offer": 2.65,
+    "price": 3.10,
+    "description": "Tomaten verfügen über einen hohen Gehalt an Vitamin C sowie Zucker und Mineralstoffen."
+  },
+  {
+    "id": "003",
+    "image": "../../assets/products/kalbsbratwuerste.jpg",
+    "name": "Kalbs-Bratwürste",
+    "offer": 8.25,
+    "price": 16.50,
+    "description": "Terra Suisse Kalbs-Bratwurst 3x2 Stück"
+  },
+  {
+    "id": "004",
+    "image": "../../assets/products/appenzeller.jpg",
+    "name": "Appenzeller Classic",
+    "offer": 2.70,
+    "price": 3.45,
+    "description": "Schweizer Halbhartkäse und vollfett. aus Rohmilch"
+  },
+  {
+    "id": "005",
+    "image": "../../assets/products/eier.jpg",
+    "name": "Eier",
+    "offer": 4.50,
+    "price": 5.40,
+    "description": "9 Schweizer Eier aus Frilandhaltung"
+  },
+  {
+    "id": "006",
+    "image": "../../assets/products/krustenkranz.jpg",
+    "name": "Krustenkranz",
+    "offer": 2.00,
+    "price": 2.30,
+    "description": "Terra Suisse"
+  },
+  {
+    "id": "007",
+    "image": "../../assets/products/vanille_glace.jpg",
+    "name": "Magnum Almond",
+    "offer": 7.90,
+    "price": 9.90,
+    "description": "Vanilleglace und Milchschokolade mit Mandeln"
+  },
+  {
+    "id": "008",
+    "image": "../../assets/products/icedtea.jpg",
+    "name": "Iced Green Tea",
+    "offer": 7.50,
+    "price": 10.80,
+    "description": "AriZona Green Tea - Grünteegetränk"
+  },
+  {
+    "id": "009",
+    "image": "../../assets/products/senf.jpg",
+    "name": "Senf",
+    "offer": 2.70,
+    "price": 3.40,
+    "description": "Senf mild"
+  },
+  {
+    "id": "010",
+    "image": "../../assets/products/olivenoel.jpg",
+    "name": "Olivenöl",
+    "offer": 14.35,
+    "price": 17.95,
+    "description": "Bertolli Olivenöl extra vergine originale"
+  }
+]
