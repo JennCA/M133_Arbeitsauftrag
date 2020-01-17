@@ -17,7 +17,7 @@ export class CheckoutComponent implements OnInit {
   ngOnInit() {
   }
 
-  public confirmOrder() {
+  public orderConfirmation() {
     if (this.validInput()) {
       alert('Danke für den Einkauf!');
       this.productService.emptyBasket();

@@ -56,8 +56,8 @@ export class BasketComponent implements OnInit {
     for (let product of this.allProducts) {
       currentProductName = product.name;
       let count = 0;
-      for (let productBasket of this.shoppingBasket) {
-        if (product.name === productBasket.name) {
+      for (let itemBasket of this.shoppingBasket) {
+        if (product.name === itemBasket.name) {
           count++;
         }
       }

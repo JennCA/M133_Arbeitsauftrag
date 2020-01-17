@@ -12,6 +12,7 @@ import { BasketComponent } from './components/basket/basket.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ProductService } from './services/product.service';
 import { HttpInterceptorService } from './services/interceptor';
+import { BasketButtonComponent } from './components/basket-button/basket-button.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpInterceptorService } from './services/interceptor';
     OverviewComponent,
     CheckoutComponent,
     BasketComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    BasketButtonComponent
   ],
   imports: [
     BrowserModule,

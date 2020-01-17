@@ -33,6 +33,11 @@ header a img {
     max-width: 100%;
 }
 
+.above-app {
+    margin-top: 20px;
+    text-align: right;
+}
+
 footer {
     position: fixed;
     bottom: 0;
