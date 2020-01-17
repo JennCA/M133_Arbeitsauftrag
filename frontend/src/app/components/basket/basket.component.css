@@ -1,0 +1,61 @@
+button {
+    background: #fff;
+    border: 2px solid #f68624;
+    color: #f68624;
+    border-radius: 3px;
+    font-weight: 700;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(246,134,36,.27);
+}
+
+.productstable {
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-collapse: collapse;
+}
+
+.productstable thead {
+    font-size: 15px;
+    background: #f68624;
+    color: #fff;
+}
+
+.productstable td, .productstable th {
+    padding: .3em;
+    border: none;
+    margin: 0;
+}
+
+.productstable tr:nth-of-type(2n) td {
+    background: #ffefef;
+}
+
+.productstable tr td:last-child, .productstable tr th:last-child {
+    text-align: right;
+}
+
+.productstable button {
+    width: 2em;
+}
+
+.productstable a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.productstable tfoot td {
+    text-align: right;
+    border-top: 1px solid #fff;
+    padding-top: .5em;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+#total {
+    font-size: 12px;
+}

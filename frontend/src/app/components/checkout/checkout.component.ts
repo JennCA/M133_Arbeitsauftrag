@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-checkout',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor() { }
+  public fname = '';
+  public lname = '';
+  public email = '';
+
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
   }
 
+  public confirmOrder() {
+    if (this.validInput()) {
+      alert('Danke für den Einkauf!');
+      this.productService.emptyBasket();
+    }
+  }
+
+  private validInput(): boolean {
+    if (this.fname !== '' && this.lname !== '' && this.email !== '') {
+      return true;
+    }
+    return false;
+  }
 }

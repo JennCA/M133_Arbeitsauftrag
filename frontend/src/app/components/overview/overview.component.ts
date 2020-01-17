@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProductService } from '../../services/product.service';
+import { Product } from '../../entities/product';
 
 @Component({
   selector: 'app-overview',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor() { }
+  public products: Array<Product> = new Array<Product>();
 
-  ngOnInit() {
+  constructor(private router: Router, private productService: ProductService) { }
+
+  async ngOnInit() {
+    this.products = await this.productService.getProducts();
   }
 
+  showDetails(food: any) {
+    this.router.navigateByUrl('product_details', {state: {data: {foodProduct: food}}});
+  }
 }

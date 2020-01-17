@@ -1,1 +1,32 @@
-<p>basket works!</p>
+<main>
+    <div id="app">
+        <table class="productstable">
+            <thead>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Einzelpreis</th>
+                    <th>Anzahl</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of itemsInBasket">
+                    <td>{{item.product.name}}</td>
+                    <td>{{item.product.offer.toFixed(2)}}</td>
+                    <td>
+                        <button type="button" class="minus" (click)="removeFromBasket(item.product)">-</button>
+                        {{item.quantity}}
+                        <button type="button" class="plus" (click)="addToBasket(item.product)">+</button>
+                    </td>
+                    <td>CHF {{(item.product.offer * item.quantity).toFixed(2)}}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" id="total">CHF {{total | number: '1.2-2'}}</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button type="button" id="checkout" [routerLink]="['/checkout/']">Checkout</button>
+    </div>
+</main>

@@ -1,1 +1,12 @@
-<p>product-details works!</p>
+<main>
+    <div id="app">
+        <div class="detail-page">
+            <img class="detail-image" [src]="food.image">
+            <div class="details">
+                <h1>{{food.name}}</h1>
+                <p>{{food.description}}</p>
+                <input type="submit" (click)="addToBasket()" value="Zum Warenkorb hinzufügen">
+            </div>
+        </div>
+    </div>
+</main>

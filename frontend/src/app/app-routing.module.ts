@@ -8,7 +8,7 @@ import { BasketComponent } from './components/basket/basket.component';
 
 const routes: Routes = [
   { path: 'overview', component: OverviewComponent },
-  { path: 'details', component: ProductDetailsComponent },
+  { path: 'product_details', component: ProductDetailsComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'basket', component: BasketComponent },
   { path: '', redirectTo: '/overview', pathMatch: 'full' },

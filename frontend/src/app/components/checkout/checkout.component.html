@@ -1,1 +1,21 @@
-<p>checkout works!</p>
+<main>
+    <div id="app">
+        <form class="checkout">
+            <div>
+                <label for="firstName">Vorname</label>
+                <input type="text" name="firstName" [(ngModel)]="fname">
+            </div>
+            <div>
+                <label for="lastName">Nachname</label>
+                <input type="text" name="lastName" [(ngModel)]="lname">
+            </div>
+            <div>
+                <label for="email">Email-Adresse</label>
+                <input type="email" name="email" [(ngModel)]="email">
+            </div>
+            <div>
+                <button type="submit" (click)="confirmOrder()">Einkauf abschliessen</button>
+            </div>
+        </form>
+    </div>
+</main>

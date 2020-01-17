@@ -1,0 +1,31 @@
+button {
+    background: #fff;
+    border: 2px solid #f68624;
+    color: #f68624;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1em
+}
+
+button:hover { 
+    background: rgba(246,134,36,.27);
+}
+
+div {
+    line-height: 2;
+}
+
+label {
+    min-width: 200px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+input { 
+    background: #fff;
+    border: 1px solid #f68624;
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer;
+}
